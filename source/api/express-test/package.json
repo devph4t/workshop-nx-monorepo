@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-ts/api",
+  "name": "@monorepo-ts/express-test",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -12,15 +12,15 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "api/dist",
+          "outputPath": "source/api/express-test/dist",
           "format": [
             "cjs"
           ],
           "bundle": false,
-          "main": "api/src/main.ts",
-          "tsConfig": "api/tsconfig.app.json",
+          "main": "source/api/express-test/src/main.ts",
+          "tsConfig": "source/api/express-test/tsconfig.app.json",
           "assets": [
-            "api/src/assets"
+            "source/api/express-test/src/assets"
           ],
           "esbuildOptions": {
             "sourcemap": true,
@@ -49,15 +49,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@monorepo-ts/api:build",
+          "buildTarget": "@monorepo-ts/express-test:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@monorepo-ts/api:build:development"
+            "buildTarget": "@monorepo-ts/express-test:build:development"
           },
           "production": {
-            "buildTarget": "@monorepo-ts/api:build:production"
+            "buildTarget": "@monorepo-ts/express-test:build:production"
           }
         }
       }

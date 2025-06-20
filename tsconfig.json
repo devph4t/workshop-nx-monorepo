@@ -5,6 +5,21 @@
   "references": [
     {
       "path": "./api"
+    },
+    {
+      "path": "./source/api"
+    },
+    {
+      "path": "./source/web"
+    },
+    {
+      "path": "./source/web/test-app"
+    },
+    {
+      "path": "./source/api/express-test"
+    },
+    {
+      "path": "./source/web/next-test"
     }
   ]
 }
